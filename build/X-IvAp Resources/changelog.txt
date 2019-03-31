@@ -1,0 +1,19 @@
+x-ivap changelog, created 30.09.2017
+
+0.4.0
+- fixed situation when the plugin ignores p2p config parameters, and always works with default ones
+- fixed sending spoiler armed state
+- fixed several sound/fmod issues
+- added obj8 support with an availability to setup multiplay liveries with the same one object file
+- added several custom x-plane commands to manage x-ivap windows
+- added the clamping feature, it can put csl models accurate onto the ground
+- added a couple of usefull x-ivap commands for csl developers (try <.help> to see the list of existing commands)
+- improved x-ivap command line, now you can move the cursor along the line and edit text at any position
+- added the x-ivap command line history feature, exactly like every terminal(console) has, try it with arrow-up and arrow-dn (+ctrl) buttons
+- added a new config file parameter: (PREFERENCES group) MODERN_KEYMAP_FOR_CMDHISTORY, 
+				if 0(default) then the arrow keys scroll content as usually, and the arrows keys + ctrl allow you to use the cmd line history feature.
+				if 1 then the arrows keys allow you to use the cmd line history feature, and the arrows-keys + ctrl scroll content.
+- added a new config file parameter: (PREFERENCES group) CMDHISTORY_BETWEEN_SESSIONS,
+				if 0(default) then x-ivap won't save the cmd line history between sessions, otherwise it will.
+- added a new config file parametr:  (PREFERENCES group) CLAMPING,
+				if 1(default) then the clamping feature is active, otherwise it is not.

@@ -1,0 +1,28 @@
+Some info about latest changes, about obj8 and about new clamping feature. (0.4.0 22.09.2017) This changes requre the XPLM210 define, beside exsisting XPLM200.
+* Spaces are not allowed in names of textures and obj files in the xsb files.
+* The clamping algorithm can find the lowest point in an obj file (let's name it as csl-model Y offset) and use it for accurate putting planes on the ground. But, obviously, this way works correctly only if the obj file is exported correctly. At least the main gear geometry (mesh) should be exported in fully extended state, relatively to the object origin point.
+* There is another way to setup csl-model Y offset, you can write the number (distance in meters from the object origin point to the lowest point along the Y axis, in 3d programs usually Z axis, in other words - vertical axis) into the mtl file, as third (3-th) parameter: "A124VDA, Volga-dnepr (VDA), 3.59", it fully overrides any calculation or searching algorithms for the y offset and will use this number as y offset.
+* Examples for xsb files ({} - means not mandatory required parts):
+// obj7/6
+OBJECT __B752:B752_rr.obj
+TEXTURE __B752:UAL2.png
+{TEXTURE_LIT __B752:BOE_rr_LIT.png } - by default will use UAL2_LIT.png, but you can ovveride it by this line
+[
+ICAO B752
+AIRLINE B752 UAL
+LIVERY B752 UAL 2
+] - only one of these three lines should be used
+// OBJ8 <group> <animate YES|NO> <filename> {<texture filename> <lit_texture filename>}
+OBJ8_AIRCRAFT __OBJ8:B738TEST
+OBJ8 SOLID YES __OBJ8:B738_WL.obj {AALWL2.png AALWL2_LIT.png} - you can specify a lot of objects with these lines
+{
+OBJ8 GLASS YES __OBJ8:B738_WL.obj {AALWL2.png AALWL2_LIT.png}
+OBJ8 LIGHTS YES __OBJ8:A320TEST.obj {AALWL2.png AALWL2_LIT.png}
+OBJ8 LOW_LOD YES __OBJ8:B738_WL.obj {AALWL2.png AALWL2_LIT.png}
+}- you can specify a lot of objects with these lines
+[
+ICAO B752
+AIRLINE B752 UAL
+LIVERY B752 UAL 2
+] - only one of these three lines should be used
+

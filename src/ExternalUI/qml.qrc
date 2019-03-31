@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/controls/XGroupBox.qml</file>
+        <file>qml/style/ExternalUIStyle.qml</file>
+        <file>qmldir</file>
+        <file>qml/controls/XTextInput.qml</file>
+        <file>qml/controls/XButton.qml</file>
+        <file>qml/controls/XTextButton.qml</file>
+        <file>qml/controls/RadioDisplayControl.qml</file>
+        <file>qml/controls/RadioActiveIndicator.qml</file>
+        <file>qml/controls/MainTextGroupBox.qml</file>
+        <file>qml/controls/TransponderControlButton.qml</file>
+        <file>fonts/B612-Regular.ttf</file>
+        <file>qml/popups/PopupBase.qml</file>
+        <file>qml/popups/NearbyATCPopup.qml</file>
+        <file>js/PopupManager.js</file>
+        <file>js/Creator.js</file>
+        <file>qml/popups/NetworkConnectPopup.qml</file>
+        <file>qml/popups/NetworkDisconnectPopup.qml</file>
+        <file>qml/popups/MessagesPopup.qml</file>
+        <file>qml/popups/SettingsPopup.qml</file>
+        <file>qml/popups/NearbyATCActionPopup.qml</file>
+        <file>qml/controls/MessagesActiveChatControl.qml</file>
+        <file>qml/popups/MessagesActiveChatListPopup.qml</file>
+        <file>qml/controls/NewMessageIndicator.qml</file>
+        <file>qml/controls/XCheckBox.qml</file>
+        <file>qml/popups/AlertDialog.qml</file>
+        <file>js/Utility.js</file>
+        <file>qml/popups/QuickFrequencyChangePopup.qml</file>
+    </qresource>
+</RCC>
